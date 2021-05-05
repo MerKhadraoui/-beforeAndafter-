@@ -7,21 +7,19 @@
     <title>Befor and After App</title>
     <link rel="stylesheet" href="./styles/main.css" />
   </head>
-
   <body>
-    <div class="container">
-      <div class="img background-img"></div>
-      <div class="img foreground-img"></div>
+    <div id="comparison">
+      <figure>
+        <div id="divisor"></div>
+      </figure>
       <input
         type="range"
-        min="1"
+        min="0"
         max="100"
         value="50"
-        class="slider"
-        name="slider"
         id="slider"
+        oninput="moveDivisor()"
       />
-      <div class="slider-button"></div>
     </div>
 
     <script src="./scripts/index.js"></script>
